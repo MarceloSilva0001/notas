@@ -17,9 +17,6 @@ h1{
     margin-bottom: 10px;
   }
   
-  .copy-button {
-    padding: 5px 10px;
-  }
   .category{
     background-color:#0b1533be;
     color: #6188FF;
@@ -40,13 +37,17 @@ h1{
     width: 40vw;
   }
   fieldset:hover{
-    background-color: rgba(255, 255, 255, 0.281);
+    background-color: rgba(255, 255, 255, 0.26);
+    color:white;
+    box-shadow: 1px 1px 20px  rgb(240, 141, 13);
+
   }
   legend{
     color: rgb(240, 141, 13);
     font-weight: bolder;
     font-size: 20px;
   }
+  
   .senhas{
     color: rgb(255, 253, 253);
   }
@@ -54,20 +55,25 @@ h1{
     color: rgba(218, 221, 46, 0.836);
   }
   button{
+    padding: 5px 10px;
     width: 100px;
     background-color: rgb(240, 141, 13);
     border-radius: 20px;
+    border: 2px solid white;
     color: black;
     font-weight: bolder;
   }
   button:hover{
-    background-color: rgb(102, 75, 39);
-    color: white;
+    background-color: #6188FF;
+    color: black;
     cursor: pointer;
+    box-shadow:2px 2px 15px 8px white;
+    border: 2px solid black;
   }
   .favorito{
-    background-color: rgba(240, 142, 13, 0.308);
+    background-color: rgba(240, 142, 13, 0.158);
   }
   span{
     color: white;
   }
+  
