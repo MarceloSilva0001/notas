@@ -74,6 +74,26 @@
         </div>
     </fieldset>
 
+    <fieldset c><legend class="">Todos os bancos instalados</legend>
+        <div class="campo">
+            <p>show databases; </p>
+                <button class="copy-button">Copy</button>
+        </div>
+    </fieldset>
+
+    <fieldset c><legend class="">Limpar pedido com erro:</legend>
+        <div class="campo">
+            <p>update sale_order set retry_expired = 1;</p>
+                <button class="copy-button">Copy</button>
+        </div>
+        <div class="campo">
+            <p>update sale_order set sent_to_erp = 1;</p>
+                <button class="copy-button">Copy</button>
+        </div>
+    </fieldset>
+
+
+
     <fieldset class="favorito"><legend class="">Comando para forçar a atualização de produto via banco:</legend>
         <div class="campo">
             <p>update temp_product set outdated = 1;</p>
@@ -102,7 +122,7 @@
         </div>
     </fieldset>
 
-    <fieldset><legend class="">Comando para impressora corta</legend>
+    <fieldset><legend class="">Limpas dados de Impressão:</legend>
         <div class="campo">
             <p>update printer set driver = 0;</p>
                 <button class="copy-button">Copy</button>
@@ -119,14 +139,32 @@
     <fieldset><legend class="">Ativa as comandas desativadas pela inovar</legend>
         <div class="campo">
             <p>update card set erp_active = 1 where id <> -1</p>
-                <button class="copy-button">Copy</button>
-        </div>
+                <button class="copy-button">Copy</button></div>
+    </fieldset>
+    <fieldset><legend class="">Marcar todos os chamar garçom como recebido:</legend>
         <div class="campo">
-            <p>update sale_order set sent_to_erp = 1;</p>
-                <button class="copy-button">Copy</button>
-        </div>
+            <p>update event set sent =1 where sent =0;</p>
+                <button class="copy-button">Copy</button></div>
     </fieldset>
 
+    <fieldset><legend class="">Lista eventos com erro:</legend>
+        <div class="campo">
+            <p>*select * from event where sent =0;</p>
+                <button class="copy-button">Copy</button></div>
+    </fieldset>
+
+    <fieldset><legend class="">Listar produtos que está vindo da integração</legend>
+        <div class="campo">
+            <p>select * from temp_product;</p>
+            <span>select * from temp_product where name like '%coca%';</span>
+                <button class="copy-button">Copy</button></div>
+    </fieldset>
+
+    <fieldset><legend class="">tualizar a tabela de comandas</legend>
+        <div class="campo">
+            <p>update card set erp_active = 1;</p>
+                <button class="copy-button">Copy</button></div>
+    </fieldset>
 
   </div>
 
