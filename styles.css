@@ -1,0 +1,73 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #6188FF;
+    background-image: url('rua-em-nova-york-vista-linda_389847-8\ \(1\).avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+  .campo {
+    margin-bottom: 10px;
+  }
+  
+  .copy-button {
+    padding: 5px 10px;
+  }
+  .category{
+    background-color:#0b1533be;
+    color: #6188FF;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(240, 141, 13);
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0px 6px 10px rgb(240, 141, 13);
+  }
+
+  fieldset{
+    text-align: center;
+    border-radius: 30px;
+    width: 50vw;
+  }
+  fieldset:hover{
+    background-color: rgba(255, 255, 255, 0.281);
+  }
+  legend{
+    color: rgb(240, 141, 13);
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  .senhas{
+    color: rgb(255, 253, 253);
+  }
+  .links{
+    color: rgba(218, 221, 46, 0.836);
+  }
+  button{
+    width: 100px;
+    background-color: rgb(240, 141, 13);
+    border-radius: 20px;
+    color: black;
+    font-weight: bolder;
+  }
+  button:hover{
+    background-color: rgb(102, 75, 39);
+    color: white;
+    cursor: pointer;
+  }
+  .favorito{
+    background-color: rgba(240, 142, 13, 0.308);
+  }
+  span{
+    color: white;
+  }
