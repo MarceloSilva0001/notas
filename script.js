@@ -20,4 +20,22 @@ document.addEventListener('DOMContentLoaded', function() {
       alert('Texto copiado: ' + text);
     }
   });
+
+  // Amplia a imagem ao cliar em cima dela
   
+  function ampliarImagem(imagem) {
+    var imagemAmpliada = document.getElementById("imagem-ampliada");
+    var imagemAmpliadaSrc = document.getElementById("imagem-ampliada-src");
+    imagemAmpliadaSrc.src = imagem.src;
+    imagemAmpliada.style.display = "block";
+  }
+  
+  function fecharImagem() {
+    var imagemAmpliada = document.getElementById("imagem-ampliada");
+    imagemAmpliada.style.display = "none";
+  }
+
+  // abrir  imagem fora em outra guia
+  function abrirImagemNovaGuia(imagemURL) {
+    window.open(imagemURL, '_blank');
+  }

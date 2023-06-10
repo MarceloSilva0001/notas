@@ -167,7 +167,7 @@
         </div>
     </fieldset>
 
-    <fieldset><legend class="">tualizar a tabela de comandas</legend>
+    <fieldset><legend class="">Atualizar a tabela de comandas</legend>
         <div class="campo">
             <p>update card set erp_active = 1;</p>
                 <button class="copy-button">Copy</button></div>
@@ -230,19 +230,6 @@
 
 
   </div>
-
-    <h1>REDE</h1>
-    
-  <div class="category">
-    
-            <fieldset><legend class="">titilo</legend>
-                <div class="campo">
-                    <p>texto</p>
-                        <button class="copy-button">Copy</button>
-                </div>
-            </fieldset>
-
-        </div>
 
     <h1>INFORMAÇÕES</h1>
         <div class="category">
@@ -334,8 +321,6 @@
                 </div>
             </fieldset>
 
-
-
         </div>
         <h1>RESPOSTAS CHAT</h1>
         <div class="category">
@@ -354,9 +339,50 @@
                         <button class="copy-button">Copy</button>
                 </div>
             </fieldset>
-
-           
         </div>
+        <h1>Periféricos</h1>
+    
+
+ <div class="image-container">
+    <abbr title="ap360"><img src="rede_imagens/ap360.png" alt="ap360" onclick="ampliarImagem(this)"></abbr>
+    <abbr title="computador"><img src="rede_imagens/computador-servidor.png" alt="servidor" onclick="ampliarImagem(this)"></abbr>
+    <abbr title="impressora-4200 th"><img src="rede_imagens/impressora-4200 betamtech.png" alt="impressora-4200" onclick="ampliarImagem(this)"></abbr>           
+    
+    <img src="rede_imagens/impressora-elgin-i9.png" alt="impressora-elgin-i9" onclick="ampliarImagem(this)">
+    <img src="rede_imagens/impressora-tmt20.png" alt="impressora-tmt20" onclick="ampliarImagem(this)">
+    <img src="rede_imagens/mikrotik_5_portas.png" alt="mikrotik-5" onclick="ampliarImagem(this)">
+    <img src="rede_imagens/Modem vivo.png" alt="Modem-vivo" onclick="ampliarImagem(this)">
+    <img src="rede_imagens/Modem.png" alt="Modem" onclick="ampliarImagem(this)">
+    <img src="rede_imagens/rack.png" alt="rack" onclick="ampliarImagem(this)">
+    <img src="rede_imagens/servidor-decicado-apenas-cpu.png" alt="servidor-decicado-apenas-cpu" onclick="ampliarImagem(this)">
+    <img src="rede_imagens/switch-24 portas.png" alt="switch-24" onclick="ampliarImagem(this)">
+    <img src="rede_imagens/switch-5_portas.png" alt="switch-5_portas" onclick="ampliarImagem(this)">
+    <img src="rede_imagens/unifi-ubiquiti.png" alt="unifi" onclick="ampliarImagem(this)">
+  </div>
+  <h1>Estrutura de rede</h1>
+  <div class="image-container">
+    <section>
+        <h2>Rede Simples</h2>
+        <img src="rede_imagens/rede_simples.jpg" alt="rede_simples" onclick="abrirImagemNovaGuia(this.src)">
+    </section>
+    <section>
+        <h2>Rede simples com Switch</h2>
+        <img src="rede_imagens/rede_simples_swtich.jpg" alt="rede_simples" onclick="abrirImagemNovaGuia(this.src)">
+    </section>
+    <section>
+        <h2>Rede Simples</h2>
+        <img src="rede_imagens/conexao_robusta.jpg" alt="conexao_robusta" onclick="abrirImagemNovaGuia(this.src)">
+    </section>
+
+
+  </div>
+
+  <div id="imagem-ampliada">
+    <span class="fechar" onclick="fecharImagem()">X</span>
+    <img id="imagem-ampliada-src">
+
+  </div>
+
 
   <script src="script.js"></script>
 </body>
