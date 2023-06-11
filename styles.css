@@ -18,6 +18,11 @@ h2{
   text-align: center;
   color: white;
 }
+#inicio{
+  box-shadow: none;
+  padding: 0px;
+  width:150px;
+}
   .category{
     background-color:#0b1533be;
     color: #6188FF;
