@@ -39,3 +39,4 @@ document.addEventListener('DOMContentLoaded', function() {
   function abrirImagemNovaGuia(imagemURL) {
     window.open(imagemURL, '_blank');
   }
+

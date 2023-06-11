@@ -168,6 +168,9 @@ nav{
 @media (max-width: 970px) {
   a{
     display: block;
-    width: ;
+    width: 100px;
   }
+}
+section img{
+  border-radius: 10px;
 }
