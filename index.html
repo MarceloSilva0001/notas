@@ -91,15 +91,37 @@
 
   <h1 id="secao2">Comandos no MYsql</h1>
   <div class="category">
-    
-
-    <fieldset><legend class="">Nome do banco:</legend>
+    <fieldset class="favorito"><legend class="">Baixar o banco de dados</legend>
         <div class="campo">
-            <p>use oimenu;</p>
+            <span>Mysql 8.0</span>
+            <p>"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqldump" -u oimenu -p oimenu > oimenu_bkp.sql”</p>
+                <button class="copy-button">Copy</button>
+        </div>
+        <div class="campo">
+            <span>Porta 3306</span>
+            <p>"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqldump" -P 3306 -u oimenu -p oimenu > oimenu_bkp.sql</p>
+                <button class="copy-button">Copy</button>
+        </div>
+        <div class="campo">
+            <span>Porta 3307</span>
+            <p>"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqldump" -P 3307 -u oimenu -p oimenu > oimenu_bkp.sql</p>
+                <button class="copy-button">Copy</button>
+        </div>
+        <div class="campo">
+            <span>Mysql 5.0</span>
+            <p>"C:\Program Files\MySQL\MySQL Server 5.0\bin\mysqldump" -u oimenu -p oimenu > oimenu_bkp.sql</p>
+                <button class="copy-button">Copy</button>
+        </div>
+
+    </fieldset>
+
+    <fieldset class="favorito"><legend class="">Comando para forçar a atualização de produto via banco:</legend>
+        <div class="campo">
+            <p>update temp_product set outdated = 1;</p>
                 <button class="copy-button">Copy</button>
         </div>
     </fieldset>
-
+    
     <fieldset><legend class="">Comando para marcar os pedidos pendentes como recebido:</legend>
         <div class="campo">
             <p>update sale_order set sent_to_erp = 1;</p>
@@ -129,12 +151,7 @@
 
 
 
-    <fieldset class="favorito"><legend class="">Comando para forçar a atualização de produto via banco:</legend>
-        <div class="campo">
-            <p>update temp_product set outdated = 1;</p>
-                <button class="copy-button">Copy</button>
-        </div>
-    </fieldset>
+    
 
     <fieldset class="favorito"><legend class="">Como limpar Todos dados do banco:</legend>
         <div class="campo">
@@ -164,12 +181,7 @@
         </div>
     </fieldset>
 
-    <fieldset class="favorito"><legend class="">Baixar o banco versao 8.0.0</legend>
-        <div class="campo">
-            <p>"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqldump" -u oimenu -p oimenu > oimenu_bkp.sql”</p>
-                <button class="copy-button">Copy</button>
-        </div>
-    </fieldset>
+    
 
     <fieldset><legend class="">Ativa as comandas desativadas pela inovar</legend>
         <div class="campo">
