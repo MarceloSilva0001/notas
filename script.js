@@ -40,3 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
     window.open(imagemURL, '_blank');
   }
 
+function abrir(){
+  if
+}
