@@ -1,0 +1,31 @@
+/* celular */
+@media (max-width: 970px) {
+  a{
+    display: block;
+    margin-top: 10px;
+  }
+}
+section img{
+  border-radius: 10px;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* icone de voltar ao topo */
+#voltar-ao-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#voltar-ao-topo img {
+  width: 60px;
+  color: white;
+}

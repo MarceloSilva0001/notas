@@ -1,0 +1,60 @@
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.322);
+    border-radius: 15px;
+    border: 2px solid rgb(240, 141, 13);
+    box-shadow: -2px -6px 6px rgb(240, 141, 13);
+    width: 95vw;
+    margin: auto;
+  }
+
+  
+  .image-container img {
+    width: 200px; /* Defina o tamanho desejado para as imagens */
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    cursor: pointer;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.2); /* Aumenta o tamanho da imagem quando o mouse passar por cima */
+  }
+  
+  /* Segunda efeito */
+
+  #imagem-ampliada {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(139, 130, 130, 0.836);
+    text-align: center;
+    padding-top: 10%;
+  }
+  
+  #imagem-ampliada img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .fechar {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  
+  .image-container img {
+    width: 200px;
+    height: auto;
+  }
+  .image-container_icone img {
+    width: 200px;
+    height: auto;
+  }

@@ -1,0 +1,49 @@
+
+
+.app {
+  display: flex; /* Usa flexbox para organizar os itens */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  background-color:#c0c2c2;
+  padding: 20px;
+  border-radius: 30px;
+  border: 4px solid rgb(255, 255, 255);
+  max-width: 700px;
+  margin: auto;
+  
+}
+.app a{
+  text-decoration: none;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  display: flex; /* Usa flexbox para organizar os itens */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha conforme necessário */
+}
+
+/* Estilo para cada item da lista */
+li {
+  display: flex; /* Usa flexbox para organizar os itens */
+  margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilo para as imagens */
+ul img {
+  border-radius: 50%; /* Faz as imagens ficarem redondas */
+  width: 50px; /* Define a largura das imagens */
+  height: 50px; /* Define a altura das imagens */
+  transition: transform 0.1s ease; /* Adiciona uma transição suave */
+  transform: scale(0.9); /* Reduz um pouco o tamanho padrão da imagem */
+}
+ul img:hover {
+  transform: scale(1.2); /* Aumenta o tamanho da imagem quando o mouse passar por cima */
+}
+
+/* Estilo para o texto */
+.app span {
+    display: block; /* Faz o span ocupar toda a largura disponível */
+    margin-top: 5px; /* Espaçamento entre a imagem e o texto */
+    color: black;
+}
