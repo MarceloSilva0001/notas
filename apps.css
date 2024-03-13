@@ -26,7 +26,7 @@ ul {
 /* Estilo para cada item da lista */
 li {
   display: flex; /* Usa flexbox para organizar os itens */
-  margin-right: 20px; /* Espaçamento entre os itens */
+ /* margin-right: 20px;  Espaçamento entre os itens */
 }
 
 /* Estilo para as imagens */
