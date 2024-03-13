@@ -1,13 +1,19 @@
+:root {
+  --cor-primaria: #838383;
+  --cor-secundaria: #65727a;
+  --cor-tercearia: #c0c2c2;
+  --cor-quarta:white;
+  --cor-quinta:black;
+}
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: #6188FF;
-    background-image: url('rua-em-nova-york-vista-linda_389847-8\ \(1\).avif');
+    background-image: url('https://cdn.abrahao.com.br/base/084/25b/881/cardapio-tablet-a-la-carte.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: center;
     margin: 0px;
 }
 
@@ -56,25 +62,31 @@ button{
   button{
     padding: 5px 10px;
     width: 100px;
-    background-color: rgb(240, 141, 13);
+    background-color: #d7dacf;
     border-radius: 20px;
-    border: 2px solid white;
+    border: 2px solid s;
     color: black;
     font-weight: bolder;
+    
   }
   button:hover{
-    background-color: #6188FF;
+    background-color: #c0c2c2;
     color: black;
     cursor: pointer;
     box-shadow:2px 2px 15px 8px white;
-    border: 2px solid black;
+    border: 2px solid #65727a;
   }
   .favorito{
     background-color: rgba(240, 142, 13, 0.158);
   }
   span{
     color: white;
+    word-wrap: break-word; /* Faz o texto dentro do span quebrar quando chegar ao limite da div */
   }
+  strong{
+    color: white;
+    font-size: 20px;
+   }
   p{
     display: none;
   }
@@ -82,15 +94,16 @@ button{
     width: 20vw;
   }
   
+  /* MENUS */
   nav{
     text-align: center;
     padding: 30px;
-    background-color: #0b1533be;
-    border-bottom: 2px solid rgb(240, 141, 13);
+    background-color:#838383;
+    border-bottom: 4px solid rgb(255, 255, 255);
   }
 
   nav a{
-    color: rgb(255, 145, 1);
+    color: white;
     margin: 10px;
     text-decoration: none;
     font-weight: bolder;
@@ -98,9 +111,10 @@ button{
     padding: 10px;
     border-radius: 10px;
   }
- /* nav a:hover{
+
+  /* aqui pode ficar com linha em volta dos icones */
+  nav a:hover{
     background-color: rgba(255, 255, 255, 0.26);
     color:white;
     box-shadow: 1px 1px 20px  rgb(240, 141, 13);
   }
-   */
