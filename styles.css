@@ -10,6 +10,7 @@ body{
     background-position: bottom;
     margin: 0px;
 }
+
 h1{
     text-align: center;
     color: white;
@@ -150,8 +151,12 @@ button{
     width: 200px;
     height: auto;
   }
+  .image-container_icone img {
+    width: 200px;
+    height: auto;
+  }
 a{
-  color: rgb(240, 141, 13);
+  color: rgb(255, 145, 1);
   margin: 10px;
   text-decoration: none;
   font-weight: bolder;
@@ -200,3 +205,34 @@ html {
   width: 60px;
   color: white;
 }
+/* apps */
+.image-container.icone section.icone img {
+  width: 50px; 
+  height: auto; 
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.image-container.icone section.icone a:link {
+  color: initial; /* Define a cor padrão do texto */
+  text-decoration: none; /* Remove a formatação de sublinhado */
+  outline: none; /* Remove a borda de foco */
+  border: none; /* Remove qualquer borda */
+  box-shadow: none;
+}
+.image-container.icone section.icone a:hover {
+  background-color: transparent; /* Remove o efeito de hover de fundo */
+}
+
+.icone {
+  text-align: center; /* Centraliza o conteúdo dentro do section */
+}
+
+.icone span {
+  display: block; /* Torna o span um elemento de bloco */
+}
+
+abbr {
+  text-decoration: none;
+}
+
