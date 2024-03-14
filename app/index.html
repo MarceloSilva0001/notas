@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>App Abrahão - Comandas & Mesas</title>
+  </head>
+
+  <body>
+    <div class="content">
+      <input type="text" id="title" placeholder="Token ID" />
+      <h3>Selecione o tipo de exclusão: (ex.: Mesa ou Comanda)</h3>
+
+      <div class="box">
+        <select id="select">
+          <option>Selecione o tipo</option>
+          <option value="mesa">Mesa</option>
+          <option value="comanda">Comanda</option>
+        </select>
+      </div>
+
+      <div class="middle">
+        <input type="number" id="initial" placeholder="Ex.: 1" /><span
+          >até</span
+        >
+        <input type="number" id="final" placeholder="Ex.: 20" />
+      </div>
+
+      <div class="bottom">
+        <button id="btn" class="button-3" role="button">Excluir</button>
+      </div>
+
+      <p id="success"></p>
+
+      <div class="box">
+        <h3>Adicionar Mesa ou Comanda:</h3>
+        <select id="select2">
+          <option>Selecione o tipo</option>
+          <option value="mesa">Mesa</option>
+          <option value="comanda">Comanda</option>
+        </select>
+        <br />
+        <br />
+        <input
+          type="number"
+          id="code"
+          style="display: flex; flex-direction: row"
+          placeholder="Código.: 1"
+        /><input type="text" id="name" placeholder="Nome.: Mesa 1" /><input
+          type="text"
+          id="fee"
+          placeholder="Serviço.: 10.00"
+        />
+        <button id="btn2" class="button-3" role="button">Adicionar</button>
+      </div>
+      <p id="success2"></p>
+    </div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

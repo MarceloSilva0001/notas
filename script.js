@@ -40,3 +40,20 @@ document.addEventListener('DOMContentLoaded', function() {
     window.open(imagemURL, '_blank');
   }
 
+
+  // mostra as ações de mesa se a mesa estiver selecionada
+
+  document.getElementById("operation").addEventListener("change", function() {
+    var selectedOption = this.value;
+    var tableSelectDiv = document.getElementById("tableSelect");
+    var apelido = document.getElementById("apelido");
+    var taxa = document.getElementById("taxa");
+
+    if (selectedOption === "table") {
+        tableSelectDiv.style.display = "block";
+        apelido.style.display = "block";
+        taxa.style.display = "block";
+    } else {
+        tableSelectDiv.style.display = "none";
+    }
+});
