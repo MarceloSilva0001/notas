@@ -118,7 +118,3 @@ button{
     color:white;
     box-shadow: 1px 1px 20px  rgb(240, 141, 13);
   }
-
-  label{
-      color: var(--cor-quarta);
-  }
