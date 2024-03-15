@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (response.ok) {
           document.getElementById('success').textContent = data.message;
         } else {
-          document.getElementById('success').textContent = `Erro ao realizar ações 303: ${data.error}`;
+          document.getElementById('success').textContent = `Servidor Fechado o Mal instalado: ${data.error}`;
         }
       } catch (error) {
         console.error(error);

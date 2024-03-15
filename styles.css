@@ -21,8 +21,12 @@ h1{
     text-align: center;
     color: white;
 }
+
 h2{
   text-align: center;
+  color: white;
+}
+h3{
   color: white;
 }
 #inicio{
@@ -30,7 +34,6 @@ h2{
   padding: 0px;
   width:150px;
 }
-  
 button{
   margin-top: 2px;
 }
@@ -83,6 +86,21 @@ button{
     color: white;
     word-wrap: break-word; /* Faz o texto dentro do span quebrar quando chegar ao limite da div */
   }
+  .api{
+    border: 1px solid white;
+    padding: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .api span{
+    margin: 5px;
+  }
+  .api strong{
+    text-align: center;
+  }
+  .api button{
+    margin: 10px;
+  }
   strong{
     color: white;
     font-size: 20px;
@@ -117,4 +135,19 @@ button{
     background-color: rgba(255, 255, 255, 0.26);
     color:white;
     box-shadow: 1px 1px 20px  rgb(240, 141, 13);
+  }
+  label{
+    color: white;
+    margin: 5px;
+  }
+  input, select{
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    display: inline-flex;
+  }
+
+  input, select:hover{
+    box-shadow: 1px 1px 1px blue;
+    cursor: pointer;
   }
