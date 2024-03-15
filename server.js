@@ -50,6 +50,7 @@ app.post('/api/v1/actions', async (req, res) => {
     
             // Itera sobre as mesas e atualiza cada uma
             for (let i = initial; i <= final; i++) {
+              
               const newData = {
                 code: i,
                 name: nome, // Novo nome da mesa
