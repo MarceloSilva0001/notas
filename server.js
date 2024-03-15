@@ -3,7 +3,7 @@ const axios = require('axios');
 const bodyParser = require('body-parser');
 
 const app = express();
-const PORT = process.env.PORT || 8081;
+const PORT = 8081;
 
 // Middleware para permitir solicitações de origens diferentes (CORS)
 app.use((req, res, next) => {
@@ -13,9 +13,8 @@ app.use((req, res, next) => {
   next();
 });
 
-// Middleware para fazer o parse do corpo da requisição
+//Middleware para fazer o parse do corpo da requisição
 app.use(bodyParser.json());
-
 
 /// Rota para lidar com ações de exclusão
 app.post('/api/v1/actions', async (req, res) => {
@@ -30,15 +29,40 @@ app.post('/api/v1/actions', async (req, res) => {
   try {
       switch((select)){
         case "table":
-          console.log("Opção table selecionada");
+          // AÇÕES DE MESA
           switch(select2) {
             case 1:// Cadastrar Mesa
-              console.log("Opção 1 selecionada Cadastrar Mesas");
-              
+            console.log("Opção 2 selecionada Cadastrar Mesa");
+            //--------------------------------------------------------
+            async function CreateTable(tableNumber, newData) {
+              try {
+                const response = await axios.post(`https://developers.abrahao.com.br/api/v1/tables`, newData, {
+                  headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json' // Especifica que os dados são JSON
+                  }
+                });
+                console.log(`Mesa ${tableNumber} Cadastradas com sucesso:`, response.data);
+              } catch (error) {
+                console.error(`Erro Cadastrar Mesa ${tableNumber}:`, error.response.data);
+              }
+            }
+    
+            // Itera sobre as mesas e atualiza cada uma
+            for (let i = initial; i <= final; i++) {
+              const newData = {
+                code: i,
+                name: nome, // Novo nome da mesa
+                service_percentage: taxa // Nova porcentagem de serviço
+              };
+    
+              await CreateTable(i, newData);
+            }
+            res.json({ success: true, message: `Ações concluídas com sucesso para ${select}s ${initial} até ${final}!` });
+            //--------------------------------------------------------
               break;
             case 2:// Atualizar Mesa
-              console.log("Opção 2 selecionada Atualizar Mesas");
-              
+            console.log("Opção 2 selecionada Atualizar Mesa");
                 async function updateTable(tableNumber, newData) {
                   try {
                     const response = await axios.put(`https://developers.abrahao.com.br/api/v1/table/${tableNumber}`, newData, {
@@ -63,15 +87,32 @@ app.post('/api/v1/actions', async (req, res) => {
                   await updateTable(i, newData);
                 }
                 res.json({ success: true, message: `Ações concluídas com sucesso para ${select}s ${initial} até ${final}!` });
-              
               break;
             case 3:// Excluir Mesa
-              console.log("Opção 3 selecionada Excluir Mesas");
-              
+            // ------------------------------------------------------------------------------------------------------------
+                    async function DeleteTable(token, initial, final) {
+                      try {
+
+                          for (let i = initial; i <= final; i++) {
+                              const response = await axios.delete(`https://developers.abrahao.com.br/api/v1/table/${i}`, {
+                                  headers: {
+                                      'Authorization': `Bearer ${token}`,
+                                      'Content-Type': 'application/json' // Especifica que os dados são JSON
+                                  }
+                              });
+                              
+                              console.log(`Mensagem da API Abrahão>> ${response.data.message}: ${i}`, response.data);
+                          }
+                          res.json({ success: true, message: `Ações concluídas com sucesso para ${select}s ${initial} até ${final}!` });
+                      } catch (error) {
+                          console.error(`Erro ao excluir mesa ${tableNumber}`, error.response.data);
+                      }
+                    }
+                    await DeleteTable(token, initial, final);
+              // ------------------------------------------------------------------------------------------------------------
               break;
             default:
-              console.log("Opção inválida selecionada");
-              res.json({ success: true, message: `Algo deu errado, tente novamente :(` });
+              console.log("A Opção("+select2+") inválida selecionada");
           }
           break;
         case 2:
@@ -83,7 +124,7 @@ app.post('/api/v1/actions', async (req, res) => {
           // Faça algo para a opção 3
           break;
         default:
-          console.log("Opção inválida selecionada");
+          console.log("A Opção("+select+") inválida selecionada");
     // Faça algo para o caso em que nenhuma opção correspondente é encontrada
       }
   } catch (error) {
@@ -96,4 +137,5 @@ app.post('/api/v1/actions', async (req, res) => {
 // Iniciar o servidor
 app.listen(PORT, () => {
   console.log(`Servidor Node.js rodando na porta ${PORT}`);
+
 });

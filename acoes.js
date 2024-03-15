@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('btn').addEventListener('click', async function() {
       const token = document.getElementById('token').value;
       const select = document.getElementById('operation').value;
-      const select2 = document.getElementById('tableOptions').value;
+      const select2 = parseInt(document.getElementById('tableOptions').value);
       const initial = parseInt(document.getElementById('initial').value);
       const final = parseInt(document.getElementById('final').value);
       const apelido = document.getElementById('apelido').value;
