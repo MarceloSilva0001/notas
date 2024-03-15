@@ -36,30 +36,35 @@ app.post('/api/v1/actions', async (req, res) => {
             //--------------------------------------------------------
             async function CreateTable(tableNumber, newData) {
               try {
-                const response = await axios.post(`https://developers.abrahao.com.br/api/v1/tables`, newData, {
+
+                const response = await axios.post(`https://developers.abrahao.com.br/api/v1/tables`, {newData}, {
                   headers: {
                     'Authorization': `Bearer ${token}`,
                     'Content-Type': 'application/json' // Especifica que os dados são JSON
                   }
                 });
                 console.log(`Mesa ${tableNumber} Cadastradas com sucesso:`, response.data);
+                console.log(newData)
               } catch (error) {
                 console.error(`Erro Cadastrar Mesa ${tableNumber}:`, error.response.data);
               }
             }
-    
-            // Itera sobre as mesas e atualiza cada uma
+            //preenche os campos para enviar no corpo da requisição
+            
             for (let i = initial; i <= final; i++) {
-              
-              const newData = {
+              var newData = {
                 code: i,
                 name: nome, // Novo nome da mesa
-                service_percentage: taxa // Nova porcentagem de serviço
+                service_percentage: taxa, // Nova porcentagem de serviço
               };
-    
+              console.log(newData)
+            }
+            // Itera sobre as mesas e atualiza cada uma
+            for (let i = initial; i <= final; i++) {
               await CreateTable(i, newData);
             }
             res.json({ success: true, message: `Ações concluídas com sucesso para ${select}s ${initial} até ${final}!` });
+            
             //--------------------------------------------------------
               break;
             case 2:// Atualizar Mesa
