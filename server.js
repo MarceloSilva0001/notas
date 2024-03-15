@@ -36,17 +36,17 @@ app.post('/api/v1/actions', async (req, res) => {
             case 1:// Cadastrar Mesa
             console.log("Opção 1 selecionada Cadastrar Mesa");
             //--------------------------------------------------------
-            async function CreateTable(tableNumber, newData) {
+            async function CreateTable(tableNumber, NovaMesa) {
               try {
 
-                const response = await axios.post(`https://developers.abrahao.com.br/api/v1/tables`, {newData}, {
+                const response = await axios.post(`https://developers.abrahao.com.br/api/v1/tables`, {NovaMesa}, {
                   headers: {
                     'Authorization': `Bearer ${token}`,
                     'Content-Type': 'application/json' // Especifica que os dados são JSON
                   }
                 });
                 console.log(`Mesa ${tableNumber} Cadastradas com sucesso:`, response.data);
-                console.log(newData)
+                console.log(NovaMesa)
                 return response.data; // Retorna a resposta da API
               } catch (error) {
                 console.error(`Erro Cadastrar Mesa ${tableNumber}:`, error.response.data);
@@ -57,12 +57,12 @@ app.post('/api/v1/actions', async (req, res) => {
             // Itera sobre as mesas e atualiza cada uma
             for (let i = initial; i <= final; i++) {
               //preenche os campos para enviar no corpo da requisição
-              var newData = {
+              var NovaMesa = {
                 code: i,
                 name: nome, // Novo nome da mesa
                 service_percentage: taxa !== null ? taxa : 0.00 // Nova porcentagem de serviço
               };
-              await CreateTable(i, newData);
+              await CreateTable(i, NovaMesa);
             }
             res.json({ success: true, message: `Ações concluídas com sucesso, Mesas Cadastradas da ${initial} até ${final}!` });
             
@@ -131,17 +131,17 @@ app.post('/api/v1/actions', async (req, res) => {
             case 1:// Cadastrar Comanda
             console.log("Opção 1 selecionada Cadastrar Comanda");
             //--------------------------------------------------------
-            async function CreateCard(tableNumber, newData) {
+            async function CreateCard(tableNumber, NovaComanda) {
               try {
 
-                const response = await axios.post(`https://developers.abrahao.com.br/api/v1/cards`, {newData}, {
+                const response = await axios.post(`https://developers.abrahao.com.br/api/v1/cards`, {NovaComanda}, {
                   headers: {
                     'Authorization': `Bearer ${token}`,
                     'Content-Type': 'application/json' // Especifica que os dados são JSON
                   }
                 });
                 console.log(`Comanda ${tableNumber} Cadastradas com sucesso:`, response.data);
-                console.log(newData)
+                console.log(NovaComanda)
               } catch (error) {
                 console.error(`Erro Cadastrar Comanda ${tableNumber}:`, error.response.data);
               }
@@ -150,11 +150,11 @@ app.post('/api/v1/actions', async (req, res) => {
             // Itera sobre os campos e adiciona a lista
             for (let i = initial; i <= final; i++) {
               //preenche os campos para enviar no corpo da requisição
-              var newData = {
+              var NovaComanda = {
                 code: i,
                 name: nome, // Novo nome da mesa
               };
-              await CreateCard(i, newData);
+              await CreateCard(i, NovaComanda);
             }
             res.json({ success: true, message: `Ações concluídas com sucesso, Comandas Cadastradas da ${initial} até ${final}!` });
             
@@ -233,6 +233,8 @@ app.post('/api/v1/actions', async (req, res) => {
 
 // Iniciar o servidor
 app.listen(PORT, () => {
-  console.log(`Servidor Node.js rodando na porta ${PORT}`);
+  console.log(`- Servidor Node.js rodando na porta ${PORT}`);
+  console.log("- Para Fechar pressione as teclas ctrl+C");
+  console.log('- Qualquer ação que fizer Na Página "Copia Ai!" relacionado ai Menu API, o servidor vai precisar estar Aberto ')
 
 });

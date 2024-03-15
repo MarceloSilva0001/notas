@@ -119,5 +119,3 @@ document.getElementById('operation').addEventListener('click', function() {
   }
 });
 
-
-//valida se o usuario digitou os campos de de inicio e fim 
