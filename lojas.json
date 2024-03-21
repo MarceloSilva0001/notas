@@ -1,0 +1,416 @@
+[
+    {
+        "endereco": "http://10.3.14.251:4999",
+        "nome": "Mundo Animal - Sorocaba"
+    },
+    {
+        "endereco": "http://192.168.15.100:4999",
+        "nome": "Mundo Animal - Curitiba"
+    },
+    {
+        "endereco": "http://192.168.15.180:4999",
+        "nome": "Mundo Animal - Santos"
+    },
+    {
+        "endereco": "http://192.168.15.200:4999",
+        "nome": "Mundo Animal - Vila Ema"
+    },
+    {
+        "endereco": "http://10.3.14.50:4999",
+        "nome": "Mundo Animal - Santo andré"
+    },
+    {
+        "endereco": "http://10.3.42.252:4999",
+        "nome": "Mundo Animal - Torres"
+    },
+    {
+        "endereco": "http://192.168.88.200:4999",
+        "nome": "Mundo Animal - Casvavel"
+    },
+    {
+        "endereco": "http://192.168.0.49:4999",
+        "nome": "Mundo Animal - São Luiz"
+    },
+    {
+        "endereco": "http://192.168.15.12:4999",
+        "nome": "Mundo Animal - Cuiaba"
+    },
+    {
+        "endereco": "http://192.168.15.90:4999",
+        "nome": "Mundo Animal - Freguesia do Óh"
+    },
+    {
+        "endereco": "http://192.168.0.155:4999",
+        "nome": "Mundo Animal - Canoas"
+    },
+    {
+        "endereco": "http://10.3.43.254:4999",
+        "nome": "Mundo Animal - Butantam - Vila Rapouso"
+    },
+    {
+        "endereco": "http://192.168.100.251:4999",
+        "nome": "Mundo Animal - Caxias 2 "
+    },
+    {
+        "endereco": "http://192.168.0.251:4999",
+        "nome": "Mundo Animal - Chapeco "
+    },
+    {
+        "endereco": "http://192.168.10.200:4999",
+        "nome": "Mundo Animal - São Bernardo"
+    },
+    {
+        "endereco": "http://192.168.0.90:4999",
+        "nome": "Mundo Animal - Mocca"
+    },
+    {
+        "endereco": "http://10.3.75.248:4999",
+        "nome": "Mundo Animal - itaquaquecetuba"
+    },
+    {
+        "endereco": "http://10.3.28.253:4999",
+        "nome": "Mundo Animal - Toledo"
+    },
+    {
+        "endereco": "http://10.3.59.253:4999",
+        "nome": "Mundo Animal - Via Mão"
+    },
+    {
+        "endereco": "http://192.168.15.20:4999",
+        "nome": "Mundo Animal - Interlagos (Taquaral)"
+    },
+    {
+        "endereco": "http://192.168.0.151:4999",
+        "nome": "Mundo Animal - Campinas "
+    },
+    {
+        "endereco": "http://10.3.54.252:4999",
+        "nome": "Mundo Animal - Ararangua"
+    },
+    {
+        "endereco": "http://192.168.0.5:4999",
+        "nome": "Mundo Animal - Matinguá"
+    },
+    {
+        "endereco": "http://192.168.100.108:4999",
+        "nome": "Mundo Animal - Passo Fundo"
+    },
+    {
+        "endereco": "http://192.168.88.200:4999",
+        "nome": "Mundo Animal - Cascavel"
+    },
+    {
+        "endereco": "http://10.3.96.248:4999",
+        "nome": "Mundo Animal - Recife"
+    },
+    {
+        "endereco": "http://192.168.210.229:4999",
+        "nome": "Mundo Animal - Salavador"
+    },
+    {
+        "endereco": "http://10.3.122.248:4999",
+        "nome": "Mundo Animal - Goiania"
+    },
+    {
+        "endereco": "http://10.3.143.2:4999",
+        "nome": "Mundo Animal - Vila EMA"
+    },
+    {
+        "endereco": "http://192.168.60.21:4999",
+        "nome": "Santa Mania Restaurante"
+    },
+    {
+        "endereco": "http://10.3.85.253:4999",
+        "nome": "Veros Tapas, Paste % Vino"
+    },
+    {
+        "endereco": "http://192.168.10.50:4999",
+        "nome": "PlayPub"
+    },
+    {
+        "endereco": "http://10.3.104.253:4999",
+        "nome": "Madame Café"
+    },
+    {
+        "endereco": "http://10.3.58.253:4999",
+        "nome": "Maximus Cervejaria"
+    },
+    {
+        "endereco": "http://10.3.82.251:4999",
+        "nome": "Aquario Gastro Bar"
+    },
+    {
+        "endereco": "http://192.168.1.101:4999",
+        "nome": "BH - Beer"
+    },
+    {
+        "endereco": "http://10.3.102.253:4999",
+        "nome": "arizona_restaurante"
+    },
+    {
+        "endereco": "http://10.3.111.253:4999",
+        "nome": "Blessy Bendita Delícias"
+    },
+    {
+        "endereco": "http://10.3.101.252:4999",
+        "nome": "Voe nos Canyons"
+    },
+    {
+        "endereco": "http://10.3.21.252:4999",
+        "nome": "Oficina do Chopp"
+    },
+    {
+        "endereco": "http://10.3.97.252:4999",
+        "nome": "Texanos"
+    },
+    {
+        "endereco": "http://10.3.86.246:4999",
+        "nome": " Wr food Ltda (Escriboni)"
+    },
+    {
+        "endereco": "http://10.3.74.254:4999",
+        "nome": "Area 04"
+    },
+    {
+        "endereco": "http://192.168.2.250:4999",
+        "nome": "Janua Beliv"
+    },
+    {
+        "endereco": "http://10.3.35.254:4999",
+        "nome": "Ms Comércio"
+    },
+    {
+        "endereco": "http://10.3.68.251:4999",
+        "nome": "Py Cofee"
+    },
+    {
+        "endereco": "http://10.3.81.251:4999",
+        "nome": "Saiko Nani"
+    },
+    {
+        "endereco": "http://10.3.88.253:4999",
+        "nome": "Vini di Alteza"
+    },
+    {
+        "endereco": "http://10.3.55.253:4999",
+        "nome": "Farra na Vila Restaurante "
+    },
+    {
+        "endereco": "http://10.3.80.253:4999",
+        "nome": "Matsuri Sushi"
+    },
+    {
+        "endereco": "http://10.3.14.189:4999",
+        "nome": " Big Jack"
+    },
+    {
+        "endereco": "http://10.3.14.10:4999",
+        "nome": " Coisa Linda"
+    },
+    {
+        "endereco": "http://10.0.2.10:4999",
+        "nome": " Cowboys "
+    },
+    {
+        "endereco": "http://2.12.11.2:4999",
+        "nome": " Santo Réu"
+    },
+    {
+        "endereco": "http://10.3.31.253:4999",
+        "nome": "Lennos steak House"
+    },
+    {
+        "endereco": "http://10.3.40.252:4999",
+        "nome": " Pijama"
+    },
+    {
+        "endereco": "http://10.3.39.254:4999",
+        "nome": "Churrascaria Monte Center"
+    },
+    {
+        "endereco": "http://10.3.41.254:4999",
+        "nome": "Batata Bistrô"
+    },
+    {
+        "endereco": "http://192.168.0.2:4999",
+        "nome": "Kian Sushi - Campo Grande"
+    },
+    {
+        "endereco": "http://192.168.0.3:4999",
+        "nome": "Kian Sushi - São joão"
+    },
+    {
+        "endereco": "http://10.3.38.253:4999",
+        "nome": "O Artigiano"
+    },
+    {
+        "endereco": "http://192.168.0.200:4999",
+        "nome": "Goa Gastronomia "
+    },
+    {
+        "endereco": "http://10.3.107.254:4999",
+        "nome": "Rony 46 - Balabaco "
+    },
+    {
+        "endereco": "http://10.3.106.254:4999",
+        "nome": "Duck Bill "
+    },
+    {
+        "endereco": "http://10.3.44.254:4999",
+        "nome": "Mr - Cuochi"
+    },
+    {
+        "endereco": "http://10.3.45.253:4999",
+        "nome": "La Vie Crepe"
+    },
+    {
+        "endereco": "http://10.3.15.253:4999",
+        "nome": "Outbeco 3 Recanto das Emas"
+    },
+    {
+        "endereco": "http://10.3.14.253:4999",
+        "nome": "Pig Ribs"
+    },
+    {
+        "endereco": "http://10.3.47.253:4999",
+        "nome": "Tuzzy"
+    },
+    {
+        "endereco": "http://10.3.48.254:4999",
+        "nome": "Togai Sushi SLO"
+    },
+    {
+        "endereco": "http://10.3.66.253:4999",
+        "nome": "Novo Sabor"
+    },
+    {
+        "endereco": "http://10.3.50.254:4999",
+        "nome": "Moncloa BH"
+    },
+    {
+        "endereco": "http://10.3.69.2:4999",
+        "nome": "Daiti Sushi"
+    },
+    {
+        "endereco": "http://10.3.70.246:4999",
+        "nome": "Varandas Floripa 2"
+    },
+    {
+        "endereco": "http://10.3.49.253:4999",
+        "nome": "Gran Dolce"
+    },
+    {
+        "endereco": "http://10.3.33.251:4999",
+        "nome": "Big Bear Sushi"
+    },
+    {
+        "endereco": "http://10.3.30.252:4999",
+        "nome": "Pizza Anita"
+    },
+    {
+        "endereco": "http://10.3.71.2:4999",
+        "nome": "Kynjo Sushi"
+    },
+    {
+        "endereco": "http://10.3.60.250:4999",
+        "nome": "Pimenta Pastéis"
+    },
+    {
+        "endereco": "http://192.168.0.169:4999",
+        "nome": "Sabores do Campo"
+    },
+    {
+        "endereco": "http://192.168.0.22:4999",
+        "nome": "Boi and Beer - Ucrania1"
+    },
+    {
+        "endereco": "http://10.3.14.228:4999",
+        "nome": "Tudo Pizza"
+    },
+    {
+        "endereco": "http://10.3.22.251:4999",
+        "nome": "Ranch"
+    },
+    {
+        "endereco": "http://10.3.76.254:4999",
+        "nome": "sao_paulo_hamburgueria_Praia_Cumprida_2"
+    },
+    {
+        "endereco": "http://10.3.36.253:4999",
+        "nome": "Rharo Goumert"
+    },
+    {
+        "endereco": "http://10.3.64.249:4999",
+        "nome": "Lofi 220"
+    },
+    {
+        "endereco": "http://10.3.65.252:4999",
+        "nome": "Okami Sushi"
+    },
+    {
+        "endereco": "http://10.3.29.251:4999",
+        "nome": "Açai e Cia"
+    },
+    {
+        "endereco": "http://10.3.61.251:4999",
+        "nome": "Grupiara"
+    },
+    {
+        "endereco": "http://10.3.26.253:4999",
+        "nome": "Helena Burguer"
+    },
+    {
+        "endereco": "http://10.3.14.204:4999",
+        "nome": "Garten "
+    },
+    {
+        "endereco": "http://10.3.14.253:4999",
+        "nome": "BBQ Smoke Housse "
+    },
+    {
+        "endereco": "http://10.3.14.252:4999",
+        "nome": "Beach Chopp "
+    },
+    {
+        "endereco": "http://10.3.14.250:4999",
+        "nome": "La Brasa Chapecó"
+    },
+    {
+        "endereco": "http://10.3.50.254:4999",
+        "nome": "Hashi Culinária"
+    },
+    {
+        "endereco": "http://10.3.57.253:4999",
+        "nome": "Coliseu Gastropub"
+    },
+    {
+        "endereco": "http://10.3.32.254:4999",
+        "nome": "Amatsu Sushi Lounge"
+    },
+    {
+        "endereco": "http://10.3.25.247:4999",
+        "nome": "Jaber"
+    },
+    {
+        "endereco": "http://10.3.63.254:4999",
+        "nome": "Delicia Goumert"
+    },
+    {
+        "endereco": "http://172.22.0.16:4999",
+        "nome": "Open Gastro Pub"
+    },
+    {
+        "endereco": "http://10.3.79.254:4999",
+        "nome": "Frutos de Góias"
+    },
+    {
+        "endereco": "http://10.3.95.253:4999",
+        "nome": "Tojo Fusion"
+    },
+    {
+        "endereco": "http://10.3.93.254:4999",
+        "nome": "Divino Sabor"
+    }
+]
+        
+    

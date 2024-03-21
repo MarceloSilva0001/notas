@@ -118,4 +118,3 @@ document.getElementById('operation').addEventListener('click', function() {
       alert('Por favor, preencha o campo de token antes de selecionar uma operação.');
   }
 });
-
