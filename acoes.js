@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       
       try {
-        const response = await fetch('http://localhost:8081/api/v1/actions', {
+        const response = await fetch('http://15.228.161.39:8081/api/v1/actions', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
