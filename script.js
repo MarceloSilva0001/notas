@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 
-  // mostra as ações de mesa se a mesa estiver selecionada
+  // mostra as ações de mesa se a mesa estiver selecionada ou produtos
 
   document.getElementById("operation").addEventListener("change", function() {
     var selectedOption = this.value;
@@ -54,6 +54,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var labelGeral = document.getElementById("labelGeral");
     var labelMesa = document.getElementById("labelMesa");
     var atualizarOpt = document.getElementById("atualizarOpt");
+    var submitBtn = document.getElementById("submitBtn");
+    var csvFileInput = document.getElementById("csvFileInput");
+    var btn = document.getElementById("btn");
+    var obss = document.getElementById("obss");
 
     if (selectedOption === "table") {
         tableSelectDiv.style.display = "block";
@@ -65,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         atualizarOpt.style.display = "block";
         labelGeral.style.display = "block";
         labelMesa.style.display = "block";
-
+      
     } 
     if (selectedOption === "card") {
       tableSelectDiv.style.display = "block";
@@ -73,7 +77,13 @@ document.addEventListener('DOMContentLoaded', function() {
       final.style.display = "block";
       ate.style.display = "block";
       labelGeral.style.display = "block";
-  } 
+    } 
+    if (selectedOption === "products") {
+      btn.style.display = "none";
+      submitBtn.style.display = "block";
+      csvFileInput.style.display = "block";
+      obss.style.display = "block";
+    }
 });
 
 
@@ -118,4 +128,11 @@ document.getElementById('operation').addEventListener('click', function() {
       alert('Por favor, preencha o campo de token antes de selecionar uma operação.');
   }
 });
+
+
+//abrir imagem do link dúvidas do produto
+function openImage() {
+  window.open("/img/planilhacsv.jpg", "_blank");
+}
+
 

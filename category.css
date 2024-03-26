@@ -46,4 +46,22 @@ div.campo:hover{
   box-shadow: 1px 1px 1px white;
 }
 
+/* Estilo para a classe .filecss */
+.filecss {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Cor de fundo azul */
+  color: #fff; /* Cor do texto branco */
+  border-radius: 5px; /* Borda arredondada */
+  text-decoration: none; /* Remover sublinhado */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  border: 2px solid #007bff; /* Borda sólida */
+  transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
 
+/* Estilo de hover para a classe .filecss */
+.filecss:hover {
+  background-color: #0056b3; /* Cor de fundo mais escura no hover */
+  color: #fff; /* Cor do texto branco no hover */
+}

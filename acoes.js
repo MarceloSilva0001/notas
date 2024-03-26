@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('btn').addEventListener('click', async function() {
       const token = document.getElementById('token').value;
       const select = document.getElementById('operation').value;
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       
       try {
-        const response = await fetch('https://notasback-production.up.railway.app/api/v1/acoes', {
+        const response = await fetch('http://localhost:8080/api/v1/acoes', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -50,4 +50,31 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('success').textContent = `Erro ao realizar ações 304: ${error.message}`;
       }
     });
+  });
+
+  //Enviar produtos
+  document.getElementById('submitBtn').addEventListener('click', async () => {
+    const fileInput = document.getElementById('csvFileInput');
+    const file = fileInput.files[0];
+    const token = document.getElementById('token').value;
+
+    if (file) {
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('token', token);
+
+      try {
+        const response = await fetch('http://localhost:8080/api/upload-file', {
+          method: 'POST',
+          body: formData
+        });
+
+        const data = await response.json();
+        console.log(data);
+      } catch (error) {
+        console.error('Erro ao enviar planilha CSV:', error);
+      }
+    } else {
+      console.error('Nenhum arquivo selecionado');
+    }
   });

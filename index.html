@@ -403,13 +403,15 @@
         <div class="api">
                     <h3>TOKEN</h3>
                     <input type="text" id="token" placeholder="COLE O TOKEN AQUI!">
-                    <h3>Modo de Operação</h3>
+                    <h3>Modo de Operação & Produtos</h3>
 
                     <div class="box">
                         <select id="operation"  name="operation">
-                            <option value="">Modo de operação</option>
+                            <option value="">Modo de Uso</option>
+                            <option value="products">Enviar sinc/Produtos</option>
                             <option value="table">Mesa</option>
                             <option value="card">Comanda</option>
+
                         </select>
                     </div>
                     
@@ -422,7 +424,8 @@
                             <option value="3">Excluir</option>
                         </Select>
                     </div>
-                    <button id="btn" class="button-3" role="button">Enviar</button>
+                    <span id="enviar"></span>
+                    <button id="btn">enviar</button>
                     <strong id="success"></strong>
                     <hr>
                     <ul>
@@ -440,6 +443,13 @@
                         </li>
                         <li>
                             <input type="text" class="number" id="taxa" placeholder="taxa" name="taxa" style="display: none;">
+                        </li>
+                        <li>
+                            <input type="file" id="csvFileInput" class="filecss" style="display: none;">
+                            <button id="submitBtn" style="display: none;">Enviar Planilha ERP</button>
+                        </li>
+                        <li>
+                            <span id="obss" style="display: none;">!!ATENÇÃO!! A Planilha que vai importar deve estar em formato (CSV ou XLSX ou XLS). Deve Conter apenas 3 Colunas,(code, name, price), precisa estar com os nomes exatamente dessa forma. Caso tenha dúvidas, <a href="#" onclick="openImage();">clique</a> aqui e veja um exemplo.</span>
                         </li>
                     </ul>
               
