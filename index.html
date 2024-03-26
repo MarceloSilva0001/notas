@@ -400,9 +400,17 @@
 <!-- api -->
   <h1 id="secao9">API</h1>
   <div class="category">
-        <div class="api">
+    <!--  -->
+    <div id="loginForm">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+    <!--  -->
+        <div id="apiContent" class="api" style="display: none;">
                     <h3>TOKEN</h3>
-                    <input type="text" id="token" placeholder="COLE O TOKEN AQUI!">
+                    <input type="text" id="token" placeholder="COLE O TOKEN AQUI!" value="">
                     <h3>Modo de Operação & Produtos</h3>
 
                     <div class="box">
@@ -449,7 +457,7 @@
                             <button id="submitBtn" style="display: none;">Enviar Planilha ERP</button>
                         </li>
                         <li>
-                            <span id="obss" style="display: none;">!!ATENÇÃO!! A Planilha que vai importar deve estar em formato (CSV ou XLSX ou XLS). Deve Conter apenas 3 Colunas,(code, name, price), precisa estar com os nomes exatamente dessa forma. Caso tenha dúvidas, <a href="#" onclick="openImage();">clique</a> aqui e veja um exemplo.</span>
+                            <span id="obss" style="display: none;">!!ATENÇÃO!! A Planilha que vai importar, deve estar em formato(.XLSX ou .XLS). Deve Conter apenas 3 Colunas,(code, name, price), precisa estar com os nomes exatamente dessa forma. Caso tenha dúvidas, <a href="#" onclick="openImage();">clique aqui</a> e veja um exemplo.</span>
                         </li>
                     </ul>
               
